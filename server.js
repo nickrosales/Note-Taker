@@ -3,6 +3,7 @@ const express = require('express');
 
 // Require the JSON file and assign it to a variable called termData
 const notesData = require('./db/db.json');
+const { readFromFile, writeToFile, readAndAppend } = require('./helpers/fsUtils');
 const fs = require('fs');
 const uuid = require('./helpers/uuid');
 const path = require('path')
@@ -24,7 +25,10 @@ app.get('/notes', (req, res) => {
 });
 
 // res.json() allows us to return JSON instead of a buffer, string, or static file
-app.get('/api/notes', (req, res) => res.json(notesData));
+app.get('/api/notes', (req, res) => {
+    readFromFile('./db/db.json')
+    .then((data) => res.json(JSON.parse(data)));
+});
 
 app.post('/api/notes', (req, res) => {
     // Log that a POST request was received
