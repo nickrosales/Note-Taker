@@ -1,0 +1,42 @@
+# Note Taker 
+
+## Description
+
+note taker site that pull notes from a json db file and allows you to add notes to it 
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+run npm i then npm strat in terminal
+
+## Usage
+
+npm start in the terminal
+
+## License
+
+No license
+
+## Contributing
+
+i worked with Marcus Paccapaniccia. his github is https://github.com/mpacct
+
+## Tests
+
+no test
+
+## Questions
+
+Github username: [nickrosales](https://www.github.com/nickrosales)
+
+Email: nickrosales68@gmail.com
+
+  

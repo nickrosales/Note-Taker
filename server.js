@@ -6,7 +6,7 @@ const notesData = require('./db/db.json');
 const fs = require('fs');
 const uuid = require('./helpers/uuid');
 const path = require('path')
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Initialize our app variable by setting it to the value of express()
 const app = express();
